@@ -1,50 +1,54 @@
 # KILCORNAN PPC
 
+- [Page 1](page-1.html)
+- [Page 2](page-2.html)
+- [Page 3](page-3.html)
+- [Page 4](page-4.html)
 
-- [page-1.html](page-1.html) 
-- [page-2.html](page-2.html)
-- [page-3.html](page-3.html)
-- [page-4.html](page-4.html)
+## Repository structure
 
-FILES
------
-index.html
-styles.css
+```text
+page-1.html
+page-2.html
+page-3.html
+page-4.html
+css/
+  page-1.css
+  page-2.css
+  page-3.css
+  page-4.css
 icons/
 images/
+```
 
-ORGANISATION
-------------
-The icons folder contains:
-- diocesan crests and papal coat of arms
-- the twelve small missionary-mandate icons from Page 1
-- the seven PPC portfolio icons from Page 2
+Each HTML page has its own dedicated stylesheet in the `css` folder.
 
-The images folder contains:
+## Assets
+
+The `icons` folder contains:
+
+- diocesan crests and the papal coat of arms
+- the small missionary-mandate icons used on Page 1
+- the PPC portfolio icons used on Pages 2 and 3
+- the timeline and eligibility icons used on Page 4
+
+The `images` folder contains:
+
 - the missionary scene with Jesus and the people
-- the Holy Spirit / cross / dove image
+- the Holy Spirit, cross and dove image
 - the Pope Francis image
 - the parish church image
 
-All of these assets were cropped directly from the two final supplied poster images.
-Nothing was regenerated.
+The cropped visual assets came from the supplied final poster artwork.
 
-HTML AND CSS
-------------
-- All headings, quotations, portfolio names and bullet lists are editable text.
-- The two designs are contained in one index.html file.
-- styles.css supplies the layout, borders, colours, grids and print rules.
-- The pages print separately on A4 portrait paper.
+## Editing
 
-OPENING THE FILE
-----------------
-1. Extract the ZIP.
-2. Keep index.html, styles.css, icons and images together.
-3. Open index.html in Chrome, Edge, Firefox or Safari.
+All headings, quotations, portfolio names and lists are editable HTML text. Layout, colours, borders, tables, arrows and print rules are controlled by the corresponding stylesheet in `css/`.
 
-PRINTING
---------
-In Chrome or Edge:
+## Printing
+
+Open the required HTML page in Chrome or Edge and use:
+
 - Paper size: A4
 - Margins: None
 - Scale: 100%
