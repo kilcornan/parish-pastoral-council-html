@@ -1,0 +1,277 @@
+/* Kilcornan PPC — Page 1
+   Election process and missionary mandate. */
+
+:root {
+  --green: #083f28;
+  --green-deep: #073421;
+  --gold: #b17a17;
+  --gold-soft: #d2a64c;
+  --cream: #fff8e8;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: #dad8d0;
+  color: #102b20;
+}
+
+body {
+  padding: 24px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.document {
+  display: grid;
+  gap: 28px;
+  justify-content: center;
+}
+
+.page {
+  position: relative;
+  width: min(100%, 1055px);
+  aspect-ratio: 210 / 297;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 25%, rgba(255,255,255,.88), transparent 38%),
+    repeating-linear-gradient(27deg, rgba(168,115,24,.025) 0 1px, transparent 1px 5px),
+    linear-gradient(120deg, #fffdf4, #fff5dc 58%, #fffaf0);
+  border: 3px solid var(--gold);
+  box-shadow: 0 10px 30px rgba(43,34,15,.22);
+  isolation: isolate;
+}
+
+.page-frame {
+  position: absolute;
+  inset: 1.25%;
+  border: 1px solid var(--gold);
+  pointer-events: none;
+  z-index: 50;
+}
+
+.parish-header {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+}
+
+.heading-copy {
+  position: relative;
+  z-index: 2;
+}
+
+.crest {
+  position: absolute;
+  object-fit: contain;
+}
+
+.page-one-header {
+  height: 14.5%;
+  padding-top: 2.3%;
+}
+
+.crest-shield {
+  left: 3.2%;
+  top: 1.1%;
+  width: 18%;
+  height: 14%;
+}
+
+.page-one-header .heading-copy {
+  margin-left: 19%;
+  width: 76%;
+}
+
+.diocese-name {
+  margin: 0;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: .22em;
+  font-size: 2.2cqw;
+}
+
+.page-one-header h1 {
+  margin: .4cqw 0 0;
+  color: var(--green);
+  text-transform: uppercase;
+  font-size: 5.2cqw;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: .03em;
+}
+
+.patron {
+  margin: .9cqw 0 0;
+  color: var(--green);
+  text-transform: uppercase;
+  font-size: 3.2cqw;
+  letter-spacing: .07em;
+}
+
+.election-heading {
+  position: relative;
+  z-index: 4;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.election-heading h2 {
+  margin: 0;
+  color: var(--green);
+  text-transform: uppercase;
+  font-size: 5.15cqw;
+  line-height: 1.05;
+}
+
+.election-heading p {
+  margin: .55cqw 0 0;
+  color: var(--gold);
+  text-transform: uppercase;
+  font-size: 5.5cqw;
+  line-height: 1;
+}
+
+.mission-quote {
+  position: relative;
+  z-index: 6;
+  width: 64%;
+  margin: 2.4% auto 0;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  font-style: italic;
+  color: #173525;
+}
+
+.mission-quote p {
+  margin: 0;
+  font-size: 1.95cqw;
+  line-height: 1.3;
+}
+
+.mission-quote cite,
+.mission-quote small {
+  display: block;
+  font-style: normal;
+}
+
+.mission-quote cite {
+  margin-top: .75cqw;
+  color: var(--gold);
+  font-size: 2cqw;
+}
+
+.mission-quote small {
+  margin-top: .35cqw;
+  font-size: 1.55cqw;
+}
+
+.mission-image {
+  position: absolute;
+  left: 0;
+  top: 34.5%;
+  width: 100%;
+  height: 31.7%;
+  margin: 0;
+  overflow: hidden;
+  border-bottom: .45cqw solid var(--green);
+  border-top: .2cqw solid rgba(177,122,23,.4);
+  z-index: 2;
+}
+
+.mission-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.mission-list {
+  position: absolute;
+  left: 4.7%;
+  right: 4.7%;
+  bottom: 3.3%;
+  height: 29.4%;
+  z-index: 5;
+}
+
+.mission-list h2 {
+  margin: 0 0 1.3cqw;
+  text-align: center;
+  color: var(--green);
+  text-transform: uppercase;
+  font-size: 3.25cqw;
+  line-height: 1.08;
+  font-weight: 600;
+}
+
+.mission-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5.5cqw;
+}
+
+.mission-columns ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mission-columns li {
+  display: grid;
+  grid-template-columns: 4.5cqw 1fr;
+  align-items: center;
+  gap: .8cqw;
+  margin: .28cqw 0;
+  font-size: 1.82cqw;
+  line-height: 1.12;
+}
+
+.mission-columns img {
+  width: 4.25cqw;
+  height: 4.25cqw;
+  object-fit: contain;
+}
+
+.bottom-cross {
+  position: absolute;
+  left: 50%;
+  bottom: .55%;
+  transform: translateX(-50%);
+  color: var(--green);
+  font-size: 5.5cqw;
+  z-index: 6;
+}
+
+@media (max-width: 720px) {
+  body { padding: 6px; }
+  .document { gap: 10px; }
+}
+
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+@media print {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: white;
+  }
+
+  .document { display: block; }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    max-width: none;
+    box-shadow: none;
+    border: 0;
+    break-after: auto;
+    page-break-after: auto;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
