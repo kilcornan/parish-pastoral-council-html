@@ -1,0 +1,277 @@
+:root{
+  --navy:#0e3264;
+  --navy2:#173f77;
+  --green:#0e512f;
+  --green2:#1f6d45;
+  --purple:#60336f;
+  --gold:#b28a2d;
+  --line:#1a4b84;
+  --pale:#f8fbff;
+  --palegreen:#eef6f0;
+  --ink:#18202a;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:#e8edf3;
+  color:var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+}
+.page{
+  width:210mm;
+  min-height:297mm;
+  margin:18px auto;
+  background:#fff;
+  border:1.4px solid var(--navy);
+  border-radius:5.5mm;
+  padding:4mm 4.5mm 3.5mm;
+  box-shadow:0 8px 28px rgba(11,35,69,.16);
+  overflow:hidden;
+}
+.topline{
+  display:grid;
+  grid-template-columns:23mm 1fr 23mm;
+  align-items:start;
+  gap:2mm;
+}
+.page-badge{
+  background:var(--navy);
+  color:#fff;
+  font-weight:700;
+  font-size:5mm;
+  line-height:1;
+  border-radius:2mm;
+  padding:2.6mm 2mm;
+  text-align:center;
+}
+.title-block{text-align:center}
+h1{
+  margin:0;
+  color:var(--navy);
+  font-size:8.1mm;
+  line-height:1.03;
+  letter-spacing:-.2mm;
+  text-transform:uppercase;
+}
+.subtitle{
+  margin:1.4mm 0 1.8mm;
+  color:var(--green);
+  font-style:italic;
+  font-size:5.2mm;
+  font-weight:700;
+}
+.ribbon{
+  display:inline-block;
+  min-width:112mm;
+  background:linear-gradient(90deg,#0b3e25,#1f6a42,#0b3e25);
+  color:#fff;
+  border-radius:2.2mm;
+  padding:1.4mm 5mm;
+  text-align:center;
+  font-size:4.2mm;
+  line-height:1;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.12mm;
+  box-shadow:0 1mm 2mm rgba(0,0,0,.12);
+}
+.timeline{
+  width:100%;
+  margin-top:1.6mm;
+  border-collapse:separate;
+  border-spacing:0;
+  table-layout:fixed;
+  border:1px solid var(--line);
+  border-radius:2.4mm;
+  overflow:hidden;
+  font-size:2.95mm;
+}
+.timeline th,
+.timeline td{
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  vertical-align:middle;
+  padding:1.75mm 2mm;
+}
+.timeline th:last-child,.timeline td:last-child{border-right:0}
+.timeline tr:last-child td{border-bottom:0}
+.timeline thead th{
+  background:linear-gradient(#163f78,#0b2e5d);
+  color:#fff;
+  text-transform:uppercase;
+  text-align:center;
+  font-size:3mm;
+  line-height:1.03;
+  padding:1.7mm 1mm;
+}
+.timeline .icon-col{width:8.4%}
+.timeline .period-col{width:13.8%}
+.timeline .stage-col{width:28.7%}
+.timeline .details-col{width:35.2%}
+.timeline .date-col{width:13.9%}
+.icon-cell{text-align:center;padding:1mm!important}
+.icon-cell img{width:12.4mm;height:12.4mm;display:block;margin:auto}
+.period{
+  text-align:center;
+  color:var(--green);
+  font-weight:700;
+  font-size:3.6mm;
+  line-height:1.25;
+}
+.stage-title{
+  color:var(--green);
+  font-weight:700;
+  font-size:3.45mm;
+  line-height:1.12;
+  margin-bottom:.9mm;
+  text-transform:uppercase;
+}
+.stage-desc{line-height:1.28}
+ul.compact{
+  margin:0;
+  padding-left:4.4mm;
+  line-height:1.25;
+}
+ul.compact li{margin:.45mm 0}
+.key-date{
+  color:var(--green);
+  font-weight:700;
+  font-style:italic;
+  text-align:center;
+  font-size:3.5mm;
+  line-height:1.28;
+}
+.transition-note{
+  width:80%;
+  margin:3.8mm auto 2.4mm;
+  border:1px solid var(--green);
+  border-radius:2mm;
+  padding:1.7mm 4mm;
+  text-align:center;
+  font-size:3.3mm;
+  line-height:1.25;
+}
+.divider{
+  display:flex;
+  align-items:center;
+  gap:2.5mm;
+  margin:0 1mm 1.8mm;
+  color:var(--navy);
+}
+.divider:before,.divider:after{
+  content:"";
+  flex:1;
+  border-top:1.4px dotted var(--navy);
+}
+.divider span{font-size:6.5mm;font-weight:700;line-height:1}
+.statutes-head{text-align:center}
+.statutes-head h2{
+  margin:0;
+  color:var(--navy);
+  font-size:6.3mm;
+  line-height:1.02;
+  text-transform:uppercase;
+}
+.diocese{
+  color:var(--green);
+  font-weight:700;
+  text-transform:uppercase;
+  font-size:4.1mm;
+  margin-top:.8mm;
+}
+.statutes-note{
+  font-style:italic;
+  font-size:3.2mm;
+  margin:1mm 0 2mm;
+}
+.cards{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:2.1mm;
+}
+.card{
+  border:1px solid var(--line);
+  border-radius:2.2mm 2.2mm 0 0;
+  padding:1.7mm 2.2mm 1.6mm;
+  min-height:52mm;
+  position:relative;
+}
+.card-head{
+  display:grid;
+  grid-template-columns:13mm 1fr;
+  align-items:center;
+  gap:1.5mm;
+  margin-bottom:1mm;
+}
+.card-head img{width:12.5mm;height:12.5mm}
+.card h3{
+  margin:0;
+  text-transform:uppercase;
+  text-align:center;
+  font-size:3.15mm;
+  line-height:1.15;
+}
+.card.green h3{color:var(--green)}
+.card.blue h3{color:var(--navy)}
+.card.purple h3{color:var(--purple)}
+.card ul{
+  margin:0;
+  padding-left:4.7mm;
+  font-size:2.9mm;
+  line-height:1.25;
+}
+.card li{margin:1mm 0}
+.mission{
+  margin-top:2.4mm;
+  border:1px solid #6b8c76;
+  border-radius:2mm;
+  background:linear-gradient(90deg,#f2f7f2,#fff,#f2f7f2);
+  display:grid;
+  grid-template-columns:32mm 1fr 27mm;
+  align-items:center;
+  min-height:22mm;
+  padding:1.7mm 3mm;
+  gap:3mm;
+}
+.mission img{max-width:100%;height:18mm;display:block;margin:auto}
+.mission-title{
+  color:var(--green);
+  font-weight:700;
+  text-transform:uppercase;
+  font-size:3.8mm;
+  margin-bottom:.7mm;
+}
+.mission-text{font-size:3.15mm;line-height:1.25;font-style:italic}
+.quote{
+  text-align:center;
+  color:var(--navy);
+  font-weight:700;
+  font-style:italic;
+  font-size:3.35mm;
+  margin-top:1.3mm;
+}
+.screen-note{
+  max-width:210mm;
+  margin:0 auto 20px;
+  text-align:center;
+  font-family:Arial,sans-serif;
+  color:#506176;
+  font-size:13px;
+}
+@media (max-width:900px){
+  .page{width:100%;min-height:auto;margin:0;border-radius:0;padding:12px}
+  .topline{grid-template-columns:70px 1fr 0}
+  h1{font-size:clamp(28px,6vw,52px)}
+  .subtitle{font-size:clamp(18px,3.4vw,30px)}
+  .ribbon{min-width:0;width:70%;font-size:clamp(15px,2.7vw,22px)}
+  .timeline{font-size:12px}
+  .cards{grid-template-columns:1fr}
+  .card{min-height:0}
+  .mission{grid-template-columns:90px 1fr 80px}
+}
+@media print{
+  @page{size:A4 portrait;margin:0}
+  html,body{width:210mm;height:297mm;background:#fff}
+  .page{margin:0;width:210mm;height:297mm;min-height:297mm;box-shadow:none;border-radius:0}
+  .screen-note{display:none}
+}
